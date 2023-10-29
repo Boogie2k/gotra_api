@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-owr#wdl9^t&*#g!=3zn0=bshipszqjviydv67knmo!t%ugxnj(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["goapi-cqoy.onrender.com"]
 
 
 # Application definition
