@@ -14,12 +14,7 @@ class Snippet(models.Model):
     not_started = models.BooleanField(default=False)
     completed = models.BooleanField(default=False)
     progress = models.IntegerField(default=toggle)
-    start =  models.DateField( default=timezone.now)
-    end = models.DateField(default=timezone.now)
-
-  
-    #start = models.DateTimeField(auto_now_add=True)
-    #end = models.DateField(auto_now_add=True, default=timezone.now)
+ 
 
 
    
@@ -35,10 +30,10 @@ class Tags(models.Model):
     def __str__(self):
         return self.tag_text
     
-class subgoals(models.Model):
+class Subgoals(models.Model):
     subgoals = models.ForeignKey(Snippet, on_delete=models.CASCADE,related_name='subgoals')
     subgoals_text = models.CharField(max_length=200)
-    creation_date = models.DateField( default=timezone.now)
+  
     isCompleted = models.BooleanField(default=False)
  
 

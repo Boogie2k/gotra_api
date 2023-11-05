@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Snippet, Tags,  subgoals
+from .models import Snippet, Tags,  Subgoals
 
 class tagInline(admin.TabularInline):
     model = Tags
@@ -8,7 +8,7 @@ class tagInline(admin.TabularInline):
 
 
 class subGoalsInline(admin.TabularInline):
-    model = subgoals
+    model = Subgoals
     
     extra= 1
 
