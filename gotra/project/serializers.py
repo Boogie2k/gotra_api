@@ -20,7 +20,7 @@ class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Snippet
     
-        fields = ['id', 'created', 'title', 'description', 'on_hold', 'not_started', 'completed', 'progress','tag','subgoals']
+        fields = ['id', 'created', 'title', 'description', 'on_hold', 'not_started', 'completed', 'start', 'end', 'progress','tag','subgoals']
 
     def create(self, validated_data):
         tags = validated_data.pop('tag')

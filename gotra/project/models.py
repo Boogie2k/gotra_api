@@ -14,6 +14,8 @@ class Snippet(models.Model):
     not_started = models.BooleanField(default=False)
     completed = models.BooleanField(default=False)
     progress = models.IntegerField(default=toggle)
+    start = models.DateField( default=timezone.now)
+    end = models.DateField( default=timezone.now)
  
 
 
